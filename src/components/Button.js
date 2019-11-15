@@ -6,9 +6,9 @@ function Button ({text, onClick}) {
     const buttonStyle = {
         backgroundColor: '#ce4257',
         color: '#ffffff',
-        fontFamily: '"Quicksand", sans-serif',
+        fontFamily: '"Bree", sans-serif',
         fontSize: '20px',
-        fontWeight: 'bold',
+        fontWeight: 'regular',
         border: 'none',
         padding: '15px',
         margin: '5px',
