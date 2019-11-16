@@ -1,0 +1,1509 @@
+[
+  {
+    "title": "Tonfisk niçoise",
+    "id": "a610ff5d-aa1a-5f55-a010-666a268017e0",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "potatis",
+        "comment": null
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "haricots verts",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": "msk",
+        "name": "dijonsenap",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "vitvinsvinäger",
+        "comment": null
+      },
+      {
+        "amount": 3,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "rödlök",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "dl",
+        "name": "urkärnade svarta oliver",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "ask färsk persilja (à 20 g)",
+        "comment": null
+      },
+      {
+        "amount": 560,
+        "unit": "g",
+        "name": "fryst vit tonfisk",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "tsk",
+        "name": "olja",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Tina tonfisken.",
+      "Koka potatisen.",
+      "Koka upp vatten i en kastrull till bönorna. Ansa och koka bönorna i 3 minuter.",
+      "Blanda dijonsenap och vinäger. Vispa sedan försiktigt i olivoljan och smaka av med salt och peppar.",
+      "Skala och skiva löken tunt.",
+      "Blanda haricots verts, oliver och lök med dressingen. Hacka eller plocka persiljan och vänd ner.",
+      "Krydda tonfisken med salt och peppar och stek den i oljan i en stekpanna ca 45 sekunder på varje sida.",
+      "Skär tonfisken i skivor och servera med potatis och bönsallad."
+    ],
+    "nutritional": 535,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/tonfisk-nicoise-725531/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201664/cf_259/tonfisk-nicoise-725531.jpg\")"
+  },
+  {
+    "title": "Stekt fläsk med stuvad blomkål",
+    "id": "edb35af5-1f67-5b64-a7f8-570c84f98913",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "potatis",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "blomkålshuvud (1 huvud motsvarar ca 650 g)",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "majsstärkelse",
+        "comment": null
+      },
+      {
+        "amount": 1.5,
+        "unit": "dl",
+        "name": "mjölk",
+        "comment": null
+      },
+      {
+        "amount": 3,
+        "unit": "dl",
+        "name": "matlagningsgrädde",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "ask färsk persilja (à 20 g)",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "cosmopolitansallad",
+        "comment": null
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "skivat rimmat bogfläsk",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "olja",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Koka potatisen.",
+      "Ansa och skär blomkålen i mindre bitar. Koka blomkålen mjuk i saltat vatten. Häll blomkålen i en sil och sätt tillbaka kastrullen på plattan. Rör ut majsstärkelsen i mjölken. Häll blandningen i kastrullen och rör i grädden. Sjud i 2 minuter och smaka av med salt och peppar.",
+      "Hacka persiljan och rör i den och vänd ner blomkålen i stuvningen.",
+      "Strimla salladen.",
+      "Stek fläsket i oljan i en stekpanna.",
+      "Servera fläsket med potatis, stuvad blomkål och sallad."
+    ],
+    "nutritional": 612,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/stekt-flask-med-stuvad-blomkal-725530/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201660/cf_259/stekt-flask-med-stuvad-blomkal-725230.jpg\")"
+  },
+  {
+    "title": "Rostad sötpotatissallad med salvia och vita bönor",
+    "id": "ce027021-3850-564d-b1e4-feef15a9a652",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "sötpotatis",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "förp kokta stora vita bönor (à 380 g)",
+        "comment": null
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "bellaverde (broccoli)",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "påse salladslök (à 125 g)",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": " citron",
+        "comment": "skalet av"
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "matyoghurt",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "kruka salvia",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "kruka grönsallad",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Sätt ugnen på 225°C och sätt in en långpanna.",
+      "Tvätta och skär sötpotatisen i ca 1/2 cm tjocka skivor. Blanda skivorna med olivoljan, salt och peppar. Häll ut potatisen på den förvärmda plåten och rosta dem mitt i ugnen först 15 minuter.",
+      "Häll bönorna i ett durkslag, spola dem i kallt vatten och låt rinna av. Ansa bellaverden och salladslöken.",
+      "Lägg bellaverde, salladslök och bönor på plåten. Rosta i ugnen ytterligare 10 minuter.",
+      "Skölj och skrubba citronen i ljummet vatten. Riv yttersta skalet av citronen och blanda med yoghurten, smaka av med salt och peppar.",
+      "Strimla salvian och strö över sötpotatisen.",
+      "Dela salladen.",
+      "Servera de rostade grönsakerna med sallad och yoghurt."
+    ],
+    "nutritional": 477,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/rostad-sotpotatissallad-med-salvia-och-vita-bonor-725550/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201745/cf_259/rostad-sotpotatissallad-med-salvia-och-vita-bonor-.jpg\")"
+  },
+  {
+    "title": "Gräddig köttfärssås med paprikapesto",
+    "id": "f6748d69-ea1b-5c06-b8b0-98175af5844d",
+    "cookingTime": 30,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port pasta (gärna spaghetti)",
+        "comment": null
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "nötfärs",
+        "comment": "ca"
+      },
+      {
+        "amount": 2,
+        "unit": "tsk",
+        "name": "olja",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "paprikapesto",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "matlagningsgrädde",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "dl",
+        "name": "mjölk",
+        "comment": null
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "körsbärstomater",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Koka pastan enligt anvisningen på förpackningen.",
+      "Stek köttfärsen i oljan i en stekpanna och krydda med salt och peppar. Sänk värmen och rör i pesto, grädde och mjölk. Låt sjuda i 5 minuter.",
+      "Skär tomaterna i halvor.",
+      "Servera pastan med köttfärssåsen och tomaterna."
+    ],
+    "nutritional": 803,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/graddig-kottfarssas-med-paprikapesto-725529/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201656/cf_259/graddig-kottfarssas-med-paprikapesto-725529.jpg\")"
+  },
+  {
+    "title": "Tonfisk med morots- och myntasallad med jordnötter",
+    "id": "0038098f-8e46-50a8-af65-2aa290213810",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port ris",
+        "comment": null
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "morötter",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "påse salladslök (à 125 g)",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "kruka mynta",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "dl",
+        "name": "salta jordnötter",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lime",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "ask böngroddar (à 180 g)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "hjärtsallad",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port vit tonfisk",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "tsk",
+        "name": "olja",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "tsk",
+        "name": "chiliflakes",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "matyoghurt",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Tina tonfisken.",
+      "Koka riset enligt anvisningen på förpackningen.",
+      "Tvätta och riv morötterna. Ansa och strimla salladslöken. Grovhacka myntan och jordnötterna.",
+      "Pressa saften ur limen och blanda med olivolja, salt och peppar.",
+      "Blanda morötter, salladslök, groddar och dressingen.",
+      "Skär salladen i bitar och blanda ner i morotssalladen.",
+      "Stek tonfisken i oljan ca 45 sekunder på varje sida. Krydda med salt och chiliflakes.",
+      "Strö myntan och jordnötterna över morotssalladen.",
+      "Servera tonfisken med morotsallad, ris och yoghurt."
+    ],
+    "nutritional": 619,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/tonfisk-med-morots-och-myntasallad-med-jordnotter-725547/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201704/cf_259/tonfisk-morots-och-myntasallad-med-jordnotter-7255.jpg\")"
+  },
+  {
+    "title": "Färsbiffar med ajvar och tomat- och mozzarellasallad    ",
+    "id": "4ad624c3-91ec-58bf-a697-56393f7d192b",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port bulgur eller annat gryn",
+        "comment": null
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "nötfärs",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsk",
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "krm",
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": "dl",
+        "name": "ajvar relish (gärna stark)",
+        "comment": null
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "haricots verts",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": "msk",
+        "name": "olja",
+        "comment": null
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "tomater (gärna vildmix)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "mozzarella (à 125 g)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "ajvar relish (gärna stark)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Koka bulgurn enligt anvisningen på förpackningen.",
+      "Biffar: Blanda färsen ordentligt med salt och peppar. Rör i ajvar och forma till 8 biffar (för 4 port).",
+      "Tillbehör: Stek haricots vertsen i hälften av oljan i en stekpanna i ca 3 minuter, krydda med salt och peppar och lägg upp på en tallrik.",
+      "Biffar: Stek biffarna i resten av oljan i stekpannan ca 8 minuter, vänd då och då.",
+      "Tillbehör: Skär tomaterna i halvor och skär mozzarellan i bitar.",
+      "Blanda ajvaren med olivoljan och smaka av med salt.",
+      "Blanda bulguren med haricots vertsen och servera till biffarna, tomatsalladen och ajvaren."
+    ],
+    "nutritional": 695,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/farsbiffar-med-ajvar-och-tomat-och-mozzarellasallad-725549/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201748/cf_259/farsbiffar-med-ajvar-och-tomat-och-mozzarellasalla.jpg\")"
+  },
+  {
+    "title": "Vegolasagne med linser",
+    "id": "92ded261-17d2-5a46-9aea-d4fce22f3630",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "förp kokta gröna linser (à 380 g)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "förp pastasås bolognese med soja (à 390 g)",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 12,
+        "unit": null,
+        "name": "lasagneplattor",
+        "comment": null
+      },
+      {
+        "amount": 5,
+        "unit": "dl",
+        "name": "lätt crème fraiche",
+        "comment": null
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "riven ost",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "cosmopolitansallad",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Sätt ugnen på 225°C.",
+      "Häll linserna i en sil, spola dem med kallt vatten och låt rinna av.",
+      "Koka upp linser och pastasåsen. Smaka av med salt och peppar.",
+      "Lägg först lite av pastasåsen i en ugnssäker form. Varva därefter lasagneplattorna med pastasåsen. Häll ut hälften av crème fraichen på ett lager i mitten. Häll resten av crème fraichen på översta plattan och strö över osten.",
+      "Grädda lasagnen mitt i ugnen ca 25 minuter.",
+      "Skär salladen i bitar och servera med lasagnen."
+    ],
+    "nutritional": 563,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/vegolasagne-med-linser-725533/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201680/cf_259/vegolasagne-med-linser-725533.jpg\")"
+  },
+  {
+    "title": "Sojastekt kyckling med sesammajonnäs",
+    "id": "756859ea-85c1-5c6f-9228-47482d8af72f",
+    "cookingTime": 30,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port ris",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "morötter",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "sesamfrö",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "majonnäs",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "kycklingfiléer",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "tsk",
+        "name": "olja",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "japansk soja",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": "dl",
+        "name": "vatten",
+        "comment": null
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "ärtskott",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Tina kycklingen.",
+      "Koka riset enligt anvisningen på förpackningen.",
+      "Tvätta och skär morötterna i stavar.",
+      "Blanda sesamfrö och majonnäs, smaka av med salt och peppar.",
+      "Skär varje kycklingfilé i 3 bitar på längden.",
+      "Stek kycklingen i oljan i en stekpanna ca 4 minuter. Sänk värmen och häll över sojan och vattnet och låt vätskan nästan koka in.",
+      "Servera kycklingen med ris, morötter, ärtskott och sesammajonnäs."
+    ],
+    "nutritional": 770,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/sojastekt-kyckling-med-sesammajonnas-725532/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201672/cf_259/sojastekt-kyckling-med-sojamajonn-s-725532.jpg\")"
+  },
+  {
+    "title": "Halstrad lax med grönärtsguacamole",
+    "id": "1d1fd126-87c5-5ecd-bb9e-9bcc68d6079f",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "potatis",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "gröna ärter",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "rödlök",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "vitlöksklyftor",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "röd paprika",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port laxfilé (á 140 g)",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lime",
+        "comment": null
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "mangoldskott",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Tina fisken.",
+      "Sätt ugnen på 225°C och ställ in en ugnsplåt.",
+      "Dela och blanda potatisen med hälften av olivoljan, krydda med salt och peppar.",
+      "Häll ut potatisen på plåten och rosta den ca 15 minuter.",
+      "Koka upp vatten i en kastrull och lägg i ärterna och låt dem koka 2 minuter så de är tinade och varma.",
+      "Mixa ärterna och resten av olivoljan till en grov puré i en matberedare eller med en stavmixer.",
+      "Skala, hacka lök och vitlök.",
+      "Dela, kärna ur och skär paprikan i små tärningar. Blanda lök- och paprikahacket med ärtpurén. Smaka av med salt och peppar.",
+      "Halstra laxen i en het stekpanna med lite salt ca 2 minuter på varje sida. Krydda med salt och peppar.",
+      "Skär limen i klyftor och servera till laxen, potatisen, guacamole och mangoldskott."
+    ],
+    "nutritional": 631,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/halstrad-lax-med-gronartsguacamole-716737/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_81932/cf_259/halstrad-lax-med-gronartsguacamole-v40-2013_716737.jpg\")"
+  },
+  {
+    "title": "Paprikayoghurt med torsk",
+    "id": "a20e495f-f8fd-56de-b78b-402d9ab7cae8",
+    "cookingTime": 30,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "potatis (gärna Marilyn)",
+        "comment": null
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "grillade paprikor",
+        "comment": null
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "körsbärstomater",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "vitlöksklyftor",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "tsk",
+        "name": "paprikapulver",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "krm",
+        "name": "cayennepeppar",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "krm",
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "torskfilé",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "kruka persilja",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "dl",
+        "name": "matyoghurt",
+        "comment": null
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "mâchesallad",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Tina torsken.",
+      "Sätt ugnen på 200°C.",
+      "Koka potatisen i saltat vatten.",
+      "Skär paprikorna i mindre bitar och dela tomaterna i halvor.",
+      "Skala och hacka vitlöken. Fräs försiktigt vitlök och de torra kryddorna i olivoljan i en kastrull tills vitlöken är mjuk.",
+      "Lägg paprikan och tomaterna i kastrullen och fräs ytterligare ca 3 minuter och låt svalna.",
+      "Skär torsken i portionsbitar, krydda med salt och peppar. Lägg dem i en ugnssäker form. Stek mitt i ugnen ca 10 minuter.",
+      "Grovhacka persiljan och rör ned i paprika- och tomatfräset tillsammans med yoghurten. Smaka av med salt och peppar.",
+      "Servera potatisen med torsk, paprikayoghurten och mâchesallad."
+    ],
+    "nutritional": 469,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/paprikayoghurt-med-torsk-716983/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_84871/cf_259/paprikayoghurt-med-torsk-v47-2013_716983.jpg\")"
+  },
+  {
+    "title": "Torskbollar med rosa sås och gurka",
+    "id": "1050e795-9a08-5312-8d49-5d208b68b898",
+    "cookingTime": 30,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "potatis",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "crème fraiche",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "gurka",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "förp torskbollar (à 325 g)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "chilisås",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "olja",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Koka potatisen.",
+      "Blanda crème fraiche med chilisås och smaka av med salt och peppar.",
+      "Skär gurkan i stavar eller tärningar.",
+      "Stek torskbollarna i oljan i en stekpanna 7-10 minuter.",
+      "Servera torskbollarna med potatis, gurka och sås."
+    ],
+    "nutritional": 560,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/torskbollar-med-rosa-sas-och-gurka-725455/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201614/cf_259/torskbollar-med-rosa-sas-och-gurka-725455.jpg\")"
+  },
+  {
+    "title": "Fläskkarré med morotstzatziki",
+    "id": "efe7a11a-612c-5953-ac2d-d9f5d1f22d5f",
+    "cookingTime": 30,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "matyoghurt",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "morötter",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "skivor fläskkarré",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port ris eller annat gryn",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "vitlöksklyfta",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "olja",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "krispsallad",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Koka riset enligt anvisningen på förpackningen.",
+      "Pressa vitlöken i yoghurten och krydda med salt och peppar. Tvätta och riv morötterna på ett rivjärn och blanda ner i yoghurten.",
+      "Stek karrén i oljan i en stekpanna ca 10 minuter, vänd då och då. Krydda med salt och peppar.",
+      "Servera karrén med ris, sallad och morotstzatziki.",
+      "Serveringsförslag: Vid servering, skär salladen i bitar och servera till maten."
+    ],
+    "nutritional": 510,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/flaskkarre-med-morotstzatziki-725453/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201600/cf_259/flaskkarre-med-morotstzatziki-725453.jpg\")"
+  },
+  {
+    "title": "Stroganoff på rökt tofu",
+    "id": "84087dc8-aa4a-57c9-951a-f141c00011cd",
+    "cookingTime": 30,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "förp alspånsrökt tofu (à 230 g)",
+        "comment": null
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "stroganoff grytbas",
+        "comment": null
+      },
+      {
+        "amount": 340,
+        "unit": "g",
+        "name": "majskorn",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "port ris eller annat gryn",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Koka riset enligt anvisningen på förpackningen.",
+      "Skär tofun i bitar. Värm grytbasen i en gryta eller kastrull och tillsätt tofun. Låt grytan koka upp.",
+      "Häll av majsen.",
+      "Servera stroganoffen med ris och toppa med majs."
+    ],
+    "nutritional": 546,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/stroganoff-pa-rokt-tofu-725457/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201627/cf_259/stroganoff-pa-rokt-tofu-725457.jpg\")"
+  },
+  {
+    "title": "Kycklingpaj med paprika",
+    "id": "2e02576e-1598-537b-90e9-3fffda2711a5",
+    "cookingTime": 30,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 530,
+        "unit": "g",
+        "name": "grillad paprika",
+        "comment": null
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "färsk pajdeg (gärna fullkorn)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "förp strimlad rökt kycklingfilé (à 160 g)",
+        "comment": null
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "ägg",
+        "comment": null
+      },
+      {
+        "amount": 1.5,
+        "unit": "dl",
+        "name": "riven ost",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "smör eller margarin",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "mjölk",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsk",
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "krm",
+        "name": "peppar",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Sätt ugnen på 225˚C.",
+      "Häll av paprikan och strimla den.",
+      "Smöra en pajform, ca 27 cm i diameter (för 4 port) och lägg i degen. Väljer du en annan storlek på formen kan tiden i ugnen behöva justeras.",
+      "Fyll skalet med kyckling och paprika.",
+      "Vispa ihop mjölk och ägg. Krydda med salt och peppar. Häll fyllningen i pajskalet och strö över osten. Sätt in mitt i ugnen ca 25 minuter eller tills den stelnat.",
+      "Servera kycklingpajen."
+    ],
+    "nutritional": 560,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/kycklingpaj-med-paprika-725456/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_201625/cf_259/kycklingpaj-med-paprika-725456.jpg\")"
+  },
+  {
+    "title": "Pasta med burrata, rostade oliver och tomater",
+    "id": "2f2bf952-141f-55d3-8e0e-549929243e19",
+    "cookingTime": 45,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "små tomater (gärna körsbärstomater)",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "svarta oliver med kärna",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "pasta (gärna trofie)",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "förp burrata (à 275 g)",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "kruka basilika",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "flingsalt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "svartpeppar",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Sätt ugnen på 175°C.",
+      "Rostade tomater och oliver: Lägg tomater och oliver i en ugnsform och ringla över olja. Rosta i mitten av ugnen ca 45 minuter.",
+      "Koka pastan enligt anvisningen på förpackningen. Häll av pastan och blanda med olja.",
+      "Toppa pastan med rostade tomater, oliver, burrata och basilika. Strö över salt och nymald svartpeppar."
+    ],
+    "nutritional": 479,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/pasta-med-burrata-rostade-oliver-och-tomater-725859/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_203006/cf_259/pasta-med-burrata-rostade-oliver-och-tomater-72585.jpg\")"
+  },
+  {
+    "title": "Kräftpasta",
+    "id": "865678e3-9786-519a-98de-89d97327552a",
+    "cookingTime": 30,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "purjolök (à ca 200 g)",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "röd chili",
+        "comment": null
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "körsbärstomater",
+        "comment": null
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "spaghetti",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "riven vitlöksklyfta",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "olivolja",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "vispgrädde",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "tsk",
+        "name": "finrivet citronskal",
+        "comment": null
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "skalade kräftstjärtar",
+        "comment": "ca"
+      },
+      {
+        "amount": 1.5,
+        "unit": "dl",
+        "name": "finriven parmesanost",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "svartpeppar",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "dill",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Ansa och skölj purjolöken noga. Skiva den tunt. Dela, kärna ur och finhacka chilin och halvera tomaterna.",
+      "Koka pastan enligt anvisning på förpackningen.",
+      "Fräs purjolök, vitlök och chili i oljan ca 5 minuter tills löken mjuknar. Tillsätt tomaterna och fräs ytterligare 2 minuter. Häll på grädde och låt koka ihop. Smaka av med citronskal, salt och peppar. Vänd ner kräftstjärtarna.",
+      "Blanda pastan med såsen och hälften av osten.",
+      "Vid servering: Toppa med resten av osten och dill."
+    ],
+    "nutritional": 655,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/kraftpasta-725852/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_202906/cf_259/kraftpasta-725852-liten.jpg\")"
+  },
+  {
+    "title": "Pasta med brynt smör och kronärtskocka",
+    "id": "58701f1e-a1d0-5c08-b36a-a761bd035c74",
+    "cookingTime": 15,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "smör",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "dl",
+        "name": "salviablad",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "burk inlagda kronärtskockor i olja (à 290 g)",
+        "comment": null
+      },
+      {
+        "amount": 350,
+        "unit": "g",
+        "name": "tagliatelle",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "tsk",
+        "name": "finrivet citronskal",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "dl",
+        "name": "finriven parmesanost",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Bryn smöret, ta från värmen och tillsätt salvian. Häll av och skär kronärtskockorna i mindre bitar.",
+      "Koka pasta enligt anvisningen på förpackningen och häll av. Blanda pastan med brynta smöret, kronärtskocka, citronskal och parmesan."
+    ],
+    "nutritional": 542,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/pasta-med-brynt-smor-och-kronartskocka-725858/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_202987/cf_259/pasta-med-brynt-smor-och-kronartskocka-725858-lite.jpg\")"
+  },
+  {
+    "title": "Cacio e pepe - pasta med parmesan och peppar",
+    "id": "33ace516-4521-5952-bd2e-907baf5b4098",
+    "cookingTime": 15,
+    "difficulty": "Enkel\n",
+    "ingredients": [
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "spaghetti",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": "tsk",
+        "name": "nymalen svartpeppar",
+        "comment": null
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "smör",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "finriven parmesanost",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Koka pastan enligt anvisningen på förpackningen.",
+      "Fräs svartpeppar i smöret i en stekpanna.",
+      "Häll försiktigt av 2 dl av pastavattnet (för 4 port) i stekpannan med smör och svartpeppar.",
+      "Häll av pastan och spara ca 1 dl pastavatten (för 4 port) om du behöver späda i nästa steg. Lägg den avrunna pastan i stekpannan. Låt koka ihop någon minut.",
+      "Tillsätt osten, ta från värmen och rör till en krämig pasta. Späd ev med mer pastavatten.",
+      "Smaka av med salt. Servera direkt."
+    ],
+    "nutritional": 410,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/cacio-e-pepe-pasta-med-parmesan-och-peppar-725860/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_203009/cf_259/cacio-e-pepe-pasta-med-parmesan-och-peppar-725860-.jpg\")"
+  },
+  {
+    "title": "Torsk med pepparrot och stomp",
+    "id": "390082f0-c44a-5067-9ca5-46e07fc8bda5",
+    "cookingTime": 45,
+    "difficulty": "Medel\n",
+    "ingredients": [
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "torsk",
+        "comment": null
+      },
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "mjölig potatis",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "dl",
+        "name": "gräddfil",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "comment": null
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "peppar",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "riven, färsk pepparrot",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "citron",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "fänkål",
+        "comment": null
+      },
+      {
+        "amount": 0.5,
+        "unit": null,
+        "name": "gurka",
+        "comment": null
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "kruka dill",
+        "comment": null
+      },
+      {
+        "amount": 2,
+        "unit": "msk",
+        "name": "smör eller margarin",
+        "comment": null
+      }
+    ],
+    "steps": [
+      "Tina torsken.",
+      "Sätt ugnen på 200°C.",
+      "Skala och koka potatisen.",
+      "Fänkålssallad: Ansa och skiva fänkålen så tunt som möjligt, använd gärna en mandolin eller osthyvel. Skala och skär gurkan i långa remsor med potatisskalare. Hacka dillen grovt. Värm fänkålen i matfettet i en kastrull och krydda med salt. Blanda ner gurkan och dillen.",
+      "Torsk: Lägg fisken i en ugnssäker form. Krydda med salt och peppar. Sätt in formen mitt i ugnen och stek ca 10 minuter eller tills innertemperaturen är 56°C.",
+      "Skala och riv pepparroten och skär citronen i klyftor.",
+      "Stomp: Krossa potatisen och blanda med gräddfilen. Smaka av med salt och peppar.",
+      "Servera torsken med gräddfil, stomp, fänkålssallad, pepparrot och citronklyftor."
+    ],
+    "nutritional": 470,
+    "numberOfPortions": 4,
+    "url": "https://www.ica.se/recept/torsk-med-pepparrot-och-stomp-717207/",
+    "imageURL": "url(\"//assets.icanet.se/q_auto,f_auto/imagevaultfiles/id_88475/cf_259/kolja-med-pepparrot-och-stomp-v5-2014-717207.jpg\")"
+  }
+]
