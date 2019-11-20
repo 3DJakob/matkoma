@@ -96,7 +96,6 @@ function SearchMatch ({ name, onClick }) {
     <div style={containerStyle}>
       <p onClick={onClick} style={pStyle}>{name}</p>
       <FontAwesomeIcon style={iconStyle} icon={faPlus} />
-      {/* TO ADD font awesome + icon */}
     </div>
   )
 }
