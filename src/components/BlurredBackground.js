@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BlurredBackground ({backgroundURL}) {
+function BlurredBackground ({ backgroundURL }) {
   const bgStyle = {
     backgroundImage: 'url(' + backgroundURL + ')',
     position: 'absolute',
@@ -17,7 +17,7 @@ function BlurredBackground ({backgroundURL}) {
   }
 
   return (
-    <div style={bgStyle}></div>
+    <div style={bgStyle} />
   )
 }
 

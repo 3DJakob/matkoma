@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
-import Fuse from 'fuse.js';
-
+import React, { useState } from 'react'
+import Fuse from 'fuse.js'
 
 const options = {
   shouldSort: true,
@@ -8,14 +7,14 @@ const options = {
   location: 0,
   distance: 100,
   maxPatternLength: 32,
-  minMatchCharLength: 1,
+  minMatchCharLength: 1
 }
 
-function SearchList ({placeholder, list, onClick}) {
+function SearchList ({ placeholder, list, onClick }) {
   const [input, setInput] = useState('')
   const [results, setResults] = useState([])
 
-  var fuse = new Fuse(list, options); // "list" is the item array
+  var fuse = new Fuse(list, options) // "list" is the item array
 
   const parentStyle = {
     display: 'flex',
@@ -56,15 +55,15 @@ function SearchList ({placeholder, list, onClick}) {
 
   return (
     <div style={parentStyle}>
-      <input style={inputStyle} placeholder={placeholder} value={input} onChange={onInput}></input>
-        <div style={suggestionContainerStyle}>
+      <input style={inputStyle} placeholder={placeholder} value={input} onChange={onInput} />
+      <div style={suggestionContainerStyle}>
         {results.map((result) => <SearchMatch onClick={() => onClickIngridient(result)} name={result} key={result}/>)}
       </div>
     </div>
   )
 }
 
-function SearchMatch ({name, onClick}) {
+function SearchMatch ({ name, onClick }) {
   const pStyle = {
     margin: 0,
     padding: 5,
