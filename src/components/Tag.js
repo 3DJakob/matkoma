@@ -5,9 +5,9 @@ import '../css/animations.css'
 
 function Tag ({ text, onClick }) {
   const tagStyle = {
-    backgroundColor: '#ce4257',
+    backgroundColor: '#6FC48C',
     color: '#ffffff',
-    fontFamily: '"Bree", sans-serif',
+    fontFamily: 'Lato, sans-serif',
     fontSize: 12,
     fontWeight: 'regular',
     border: 'none',

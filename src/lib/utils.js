@@ -1,5 +1,5 @@
 
-const getIngridientsFromRecepies = (recepies) => {
+const getIngredientsFromRecepies = (recepies) => {
   const ingredients = []
   for (const recepie of recepies) {
     const recipieIngredients = recepie.ingredients.map(ingredient => ingredient.name)
@@ -13,4 +13,4 @@ const getIngridientsFromRecepies = (recepies) => {
   return ingredients
 }
 
-export default getIngridientsFromRecepies
+export default getIngredientsFromRecepies
