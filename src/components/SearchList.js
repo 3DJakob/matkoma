@@ -60,7 +60,7 @@ function SearchList ({ placeholder, numberOfVisibleInResult, list, onClick }) {
     <div style={parentStyle}>
       <input style={inputStyle} placeholder={placeholder} value={input} onChange={onInput} />
       <div style={suggestionContainerStyle}>
-        {results.map((result) => <SearchMatch onClick={() => onClickIngridient(result)} name={result} key={result}/>)}
+        {results.map((result) => <SearchMatch onClick={() => onClickIngridient(result)} name={result} key={result} />)}
       </div>
     </div>
   )
