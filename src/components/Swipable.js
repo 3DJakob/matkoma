@@ -23,19 +23,6 @@ const Swipable = ({ removeOnSwipe, children, onSwipe }) => {
     return { x: width, y: height }
   }
 
-  const getElementPosOnScreen = (element) => {
-    const bodyRect = document.body.getBoundingClientRect()
-    const elemRect = element.getBoundingClientRect()
-
-    const offsetRight = elemRect.right - bodyRect.right
-    const x = (offsetRight + getElementSize(element).x) / document.body.clientWidth
-
-    const offsetTop = elemRect.top - bodyRect.top
-    const y = (offsetTop + (getElementSize(element).y / 2)) / document.body.clientHeight
-
-    return { x: x, y: y }
-  }
-
   const pythagoras = (x, y) => {
     return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2))
   }
@@ -52,7 +39,7 @@ const Swipable = ({ removeOnSwipe, children, onSwipe }) => {
     const translateString = translationString(speed.x * multiplier + startPos.x, -speed.y * multiplier + startPos.y)
     const rotateString = rotationString(getRotation(element))
 
-    element.style.transition = time + 's'
+    element.style.transition = 'ease-out ' + time + 's'
     element.style.transform = translateString + rotateString
 
     await sleep(time * 1000)
@@ -91,24 +78,6 @@ const Swipable = ({ removeOnSwipe, children, onSwipe }) => {
     }
   }
 
-  const dragableTouchstart = (e, element, offset) => {
-    const touchLocation = e.targetTouches[0]
-    offset.x = -touchLocation.clientX
-    offset.y = -touchLocation.clientY
-    return offset
-  }
-
-  const dragableTouchmove = (e, element, offset, lastLocation) => {
-    const touchLocation = e.targetTouches[0]
-    const pos = { x: touchLocation.clientX + offset.x, y: touchLocation.clientY + offset.y }
-    const newLocation = { x: pos.x, y: pos.y, time: new Date().getTime() }
-    const translation = translationString(pos.x, pos.y)
-    const rotCalc = calcSpeed(lastLocation, newLocation).x / 1000
-    const rotation = rotationString(rotCalc * settings.maxTilt)
-    element.style.transform = translation + rotation
-    return newLocation
-  }
-
   const calcSpeed = (oldLocation, newLocation) => {
     const dx = newLocation.x - oldLocation.x
     const dy = oldLocation.y - newLocation.y
@@ -140,7 +109,7 @@ const Swipable = ({ removeOnSwipe, children, onSwipe }) => {
     return ans
   }
 
-  const dragableTouchend = async (e, element, speed) => {
+  const dragableTouchend = async (element, speed) => {
     if (Math.abs(speed.x) > settings.swipeThreshold | Math.abs(speed.y) > settings.swipeThreshold) { // Swipe recognized
       if (removeOnSwipe) {
         if (await animateOut(element, speed)) {
@@ -155,20 +124,66 @@ const Swipable = ({ removeOnSwipe, children, onSwipe }) => {
     }
   }
 
+  const dragableTouchmove = (coordinates, element, offset, lastLocation) => {
+    const pos = { x: coordinates.x + offset.x, y: coordinates.y + offset.y }
+    const newLocation = { x: pos.x, y: pos.y, time: new Date().getTime() }
+    const translation = translationString(pos.x, pos.y)
+    const rotCalc = calcSpeed(lastLocation, newLocation).x / 1000
+    const rotation = rotationString(rotCalc * settings.maxTilt)
+    element.style.transform = translation + rotation
+    return newLocation
+  }
+
+  const touchCoordinatesFromEvent = (e) => {
+    const touchLocation = e.targetTouches[0]
+    return { x: touchLocation.clientX, y: touchLocation.clientY }
+  }
+
+  const mouseCoordinatesFromEvent = (e) => {
+    return { x: e.clientX, y: e.clientY }
+  }
+
   const ref = useCallback((element) => {
+    let mouseIsClicked = false
+
     element.addEventListener(('touchstart'), (ev) => {
       ev.preventDefault()
-      offset = dragableTouchstart(ev, element, offset)
+      offset = { x: -touchCoordinatesFromEvent(ev).x, y: -touchCoordinatesFromEvent(ev).y }
     })
+    element.addEventListener(('mousedown'), (ev) => {
+      ev.preventDefault()
+      mouseIsClicked = true
+      offset = { x: -mouseCoordinatesFromEvent(ev).x, y: -mouseCoordinatesFromEvent(ev).y }
+    })
+
     element.addEventListener(('touchmove'), (ev) => {
       ev.preventDefault()
-      const newLocation = dragableTouchmove(ev, element, offset, lastLocation)
+      const newLocation = dragableTouchmove(touchCoordinatesFromEvent(ev), element, offset, lastLocation)
       speed = calcSpeed(lastLocation, newLocation)
       lastLocation = newLocation
     })
+    element.addEventListener(('mousemove'), (ev) => {
+      ev.preventDefault()
+      if (mouseIsClicked) {
+        const newLocation = dragableTouchmove(mouseCoordinatesFromEvent(ev), element, offset, lastLocation)
+        speed = calcSpeed(lastLocation, newLocation)
+        lastLocation = newLocation
+      }
+    })
+
     element.addEventListener(('touchend'), (ev) => {
       ev.preventDefault()
-      dragableTouchend(ev, element, speed)
+      dragableTouchend(element, speed)
+    })
+    element.addEventListener(('mouseup'), (ev) => {
+      ev.preventDefault()
+      mouseIsClicked = false
+      dragableTouchend(element, speed)
+    })
+    element.addEventListener(('mouseleave'), (ev) => {
+      ev.preventDefault()
+      mouseIsClicked = false
+      dragableTouchend(element, speed)
     })
   })
   return <div ref={ref}>{children}</div>
