@@ -1,16 +1,21 @@
 import React from 'react'
 
-function Button ({ text, onClick }) {
+function Button ({ text, upperCase, onClick }) {
+  Button.defaultProps = {
+    upperCase: false
+  }
+
   const buttonStyle = {
-    backgroundColor: '#ce4257',
+    backgroundColor: '#6FC48C',
     color: '#ffffff',
-    fontFamily: '"Bree", sans-serif',
-    fontSize: '20px',
-    fontWeight: 'regular',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: 20,
+    fontWeight: 'bold',
     border: 'none',
-    padding: '15px',
-    margin: '5px',
-    borderRadius: '100px'
+    padding: 15,
+    margin: 5,
+    borderRadius: 100,
+    textTransform: upperCase ? 'upperCase' : 'initial'
   }
 
   return (
