@@ -6,7 +6,8 @@ const LogoBanner = function () {
 
   const parentStyle = {
     width: '100vw',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    height: height
   }
 
   const containerStyle = {
