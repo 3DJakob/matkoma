@@ -19,7 +19,7 @@ const LogoBanner = function () {
     borderRadius: '0 0 50% 50%',
     height: height * 2,
     width: '160vw',
-    transform: 'translateY(' + -height + 'px)' + ' translateX(-30vw)',
+    transform: 'translateY(' + -height + 'px) translateX(-30vw)',
     boxShadow: 'inset 0 0 100px 0 rgba(0,0,0,0.2)'
   }
 
@@ -32,7 +32,7 @@ const LogoBanner = function () {
   return (
     <div style={parentStyle}>
       <div style={containerStyle}>
-        <img style={logoStyle} src={logo} />
+        <img style={logoStyle} src={logo} alt='logo' />
       </div>
     </div>
   )
