@@ -18,7 +18,7 @@ function Tag ({ text, onClick }) {
     justifyContent: 'center',
     alignItems: 'center',
 
-    animationName: 'createTag',
+    animationName: 'bounceIn',
     animationDuration: '0.5s'
   }
 
