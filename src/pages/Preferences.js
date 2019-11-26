@@ -5,9 +5,9 @@ import TitleWithDescription from '../components/TitleWithDescription'
 import SearchList from '../components/SearchList'
 import recepies from '../db/recepies'
 import { getIngredientsFromRecepies, getSpecialDietsFromRecepies } from '../lib/utils'
-import Slider from '@material-ui/core/Slider'
 import Button from '../components/Button'
 import Checkbox from '../components/Checkbox'
+import StyledSlider from '../components/StyledSlider'
 
 function Preferences () {
   const ingredients = getIngredientsFromRecepies(recepies)
@@ -15,12 +15,6 @@ function Preferences () {
 
   const onSelectedIngredient = (ingredient) => {
     console.log(ingredient)
-  }
-  const [timerange, setTimerange] = React.useState([20, 80])
-
-  const changeTime = (event, newTime) => {
-    setTimerange(newTime)
-    console.log(timerange)
   }
 
   const toggleDiet = (bool, diet) => {
@@ -33,11 +27,7 @@ function Preferences () {
       <TitleWithDescription title='1. Lägg till ingredienser' description='Ange upp till tre ingredienser som du vill använda' />
       <SearchList placeholder='Skriv in en ingrediens...' numberOfVisibleInResult={5} list={ingredients} onClick={onSelectedIngredient} />
       <TitleWithDescription title='2. Ange (mål)tid' description='Hur mycket tid har du?' />
-      <Slider
-        value={timerange}
-        onChange={changeTime}
-        valueLabelDisplay='auto'
-      />
+      <StyledSlider onChange={() => console.log('Slidern slidedad')} />
       <TitleWithDescription title='3. Ange matpreferens' description='Har du någon specialkost?' />
       <div className='dietContainer'>
         {specialDiets.map((diet) => <Checkbox style={{ width: '50%' }} key={diet} label={diet} onPress={(state) => toggleDiet(state, diet)} />)}
