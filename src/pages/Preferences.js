@@ -1,15 +1,18 @@
 import React from 'react'
+import '../css/Preferences.css'
 import LogoBanner from '../components/LogoBanner'
 import TitleWithDescription from '../components/TitleWithDescription'
 import SearchList from '../components/SearchList'
 import recepies from '../db/recepies'
-import getIngredientsFromRecepies from '../lib/utils'
+import { getIngredientsFromRecepies, getSpecialDietsFromRecepies } from '../lib/utils'
 import Slider from '@material-ui/core/Slider'
 import Button from '../components/Button'
 import Checkbox from '../components/Checkbox'
 
 function Preferences () {
   const ingredients = getIngredientsFromRecepies(recepies)
+  const specialDiets = getSpecialDietsFromRecepies(recepies)
+
   const onSelectedIngredient = (ingredient) => {
     console.log(ingredient)
   }
@@ -18,6 +21,10 @@ function Preferences () {
   const changeTime = (event, newTime) => {
     setTimerange(newTime)
     console.log(timerange)
+  }
+
+  const toggleDiet = (bool, diet) => {
+    console.log(diet + ' ' + bool)
   }
 
   return (
@@ -32,12 +39,9 @@ function Preferences () {
         valueLabelDisplay='auto'
       />
       <TitleWithDescription title='3. Ange matpreferens' description='Har du någon specialkost?' />
-      <Checkbox label='Vegetariskt' />
-      <Checkbox label='Glutenfri' />
-      <Checkbox label='Laktosfri' />
-      <Checkbox label='Äggfri' />
-      <Checkbox label='Vegan' />
-      <Checkbox label='Nötfri' />
+      <div className='dietContainer'>
+        {specialDiets.map((diet) => <Checkbox style={{ width: '50%' }} key={diet} label={diet} onPress={(state) => toggleDiet(state, diet)} />)}
+      </div>
       <Button text='Hitta match' upperCase onClick={() => ('Sökknappen klickt')} />
 
     </div>
