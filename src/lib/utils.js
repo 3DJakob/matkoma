@@ -13,4 +13,20 @@ const getIngredientsFromRecepies = (recepies) => {
   return ingredients
 }
 
-export default getIngredientsFromRecepies
+const getSpecialDietsFromRecepies = (recepies) => {
+  const diets = []
+  for (const recepie of recepies) {
+    for (const diet of recepie.specialDiets) {
+      if (!diets.includes(diet)) {
+        diets.push(diet)
+      }
+    }
+  }
+
+  return diets
+}
+
+export {
+  getIngredientsFromRecepies,
+  getSpecialDietsFromRecepies
+}
