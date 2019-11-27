@@ -5,7 +5,7 @@ class Checkbox extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      isChecked: false
+      isChecked: null
     }
   }
 
@@ -38,10 +38,8 @@ class Checkbox extends Component {
       borderRadius: '100%',
       backgroundColor: '#6fc48c',
       animationDuration: '0.3s',
-      animationName: isChecked ? 'createTag' : '',
+      animationName: isChecked ? 'bounceIn' : 'bounceOut',
       animationFillMode: 'forwards',
-      transition: '200ms',
-      transform: isChecked ? 'scale(1)' : 'scale(0)',
       pointerEvents: 'none'
     }
 
