@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './css/App.css'
-import recepies from './db/recepies.json'
-import getIngridientsFromRecepies from './lib/utils.js'
-const ingridients = getIngridientsFromRecepies(recepies)
+import Preferences from './pages/Preferences'
 
-function App() {
+function App () {
+  const [route, SetRoute] = useState('preferences')
+
   return (
-    <div className="App">
-      <link rel="stylesheet" href="https://use.typekit.net/kja2qvx.css"></link>
-      <h1>Hello world</h1>
+    <div className='App'>
+      <link rel='stylesheet' href='https://use.typekit.net/kja2qvx.css' />
+      {route === 'preferences' ? <Preferences /> : ''}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
