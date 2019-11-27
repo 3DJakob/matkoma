@@ -1,5 +1,29 @@
+.Preferences {
+  background-color:#fff;
+  overflow: hidden;
+}
+
 .dietContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.preferencesContainer {
+  margin: 20px;
+}
+
+.topBg {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.5, rgb(116, 244, 151)),
+    color-stop(0.5, #fff)
+  );
+  position: fixed;
+  top: 0px;
+  z-index: -1;
 }
