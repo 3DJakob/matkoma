@@ -2,7 +2,7 @@ input {
     -webkit-appearance: none;
 }
 
-* {
+div, p, h1, h2, h3 {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
