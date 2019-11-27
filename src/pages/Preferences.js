@@ -3,13 +3,12 @@ import '../css/Preferences.css'
 import LogoBanner from '../components/LogoBanner'
 import TitleWithDescription from '../components/TitleWithDescription'
 import SearchList from '../components/SearchList'
-import recepies from '../db/recepies'
 import { getIngredientsFromRecepies, getSpecialDietsFromRecepies } from '../lib/utils'
 import Button from '../components/Button'
 import Checkbox from '../components/Checkbox'
 import StyledSlider from '../components/StyledSlider'
 
-function Preferences () {
+function Preferences ({ recepies }) {
   const ingredients = getIngredientsFromRecepies(recepies)
   const specialDiets = getSpecialDietsFromRecepies(recepies)
 
