@@ -22,6 +22,7 @@ function StyledSlider ({ onChange }) {
     overrides: {
       MuiSlider: {
         root: {
+          width: 'calc(100% - ' + thumbDiameter / 2 + 'px)'
         },
         thumb: {
           color: sliderColor,
