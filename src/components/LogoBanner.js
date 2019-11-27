@@ -6,7 +6,6 @@ const LogoBanner = function () {
 
   const parentStyle = {
     width: '100vw',
-    overflow: 'hidden',
     height: height
   }
 
@@ -14,8 +13,8 @@ const LogoBanner = function () {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-end',
-    backgroundColor: '#6fc48c',
-    background: 'linear-gradient(0deg, rgba(111,196,140,1) 0%, rgba(116,244,151,1) 100%)',
+    backgroundColor: 'rgb(116, 244, 151)',
+    background: 'linear-gradient(0deg, rgba(111,196,140,1) 0%, rgba(116,244,151,1) 50%)',
     borderRadius: '0 0 50% 50%',
     height: height * 2,
     width: '160vw',
