@@ -1,11 +1,6 @@
 import React from 'react'
 
-function Card ({ recipe, showfront, onClick }) {
-  // onsole.log(recipe)
-  // console.log(recipe.difficulty)
-  // console.log(typeof (recipe.difficulty))
-  // console.log(showfront ? 'rotateY(180deg)' : 'rotateY(0deg)')
-
+function Card ({ recipe, showfront = true, onClick }) {
   const CardStyle = {
     height: '50vh',
     width: '80vw',
@@ -14,6 +9,7 @@ function Card ({ recipe, showfront, onClick }) {
     transformStyle: 'preserve-3d',
     transform: showfront ? 'rotateY(180deg)' : 'rotateY(0deg)'
   }
+
   const FrontStyle = {
     backgroundImage: recipe.imageURL,
     backgroundRepeat: 'no-repeat',
@@ -24,17 +20,21 @@ function Card ({ recipe, showfront, onClick }) {
     width: '100%',
     position: 'absolute',
     backfaceVisibility: 'hidden',
+    WebkitBackfaceVisibility: 'hidden',
     transform: 'rotateY(180deg)',
-    borderRadius: '15px'
+    borderRadius: 20
   }
+
   const BackStyle = {
     background: 'red',
     height: '100%',
     width: '100%',
     position: 'absolute',
-    backfaceVisibility: 'hidden'
-
+    backfaceVisibility: 'hidden',
+    WebkitBackfaceVisibility: 'hidden',
+    borderRadius: 20
   }
+
   return (
     <div style={CardStyle}>
       <div style={FrontStyle} />
