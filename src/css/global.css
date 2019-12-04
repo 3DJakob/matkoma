@@ -1,0 +1,14 @@
+.heading {
+    font-family: 'Roboto Slab, sans-serif';
+    font-weight: bold;
+    font-size: 24px;
+}
+.subheading {
+    font-family: 'Roboto Slab, sans-serif';
+    font-weight: bold;
+    font-size: 20px;
+}
+.bodytext {
+    font-family: 'Lato, sans-serif';
+    font-size: 15px;
+}
