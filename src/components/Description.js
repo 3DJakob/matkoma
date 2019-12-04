@@ -3,11 +3,7 @@ import { getTextColorFromDifficulty } from '../lib/utils'
 import IngredientList from './Ingredient'
 import '../css/global.css'
 
-function Description ({ recipe, onClick }) {
-  console.log(recipe)
-  // console.log(recipe.difficulty)
-  // console.log(typeof (recipe.difficulty))
-
+function Description ({ style = {}, recipe, onClick }) {
   const height = 100
 
   const DescriptionWrapper = {
@@ -15,6 +11,7 @@ function Description ({ recipe, onClick }) {
     margin: height + 'px 0 0 0',
     width: '100vw'
   }
+
   const EllipsWrapper = {
     width: '100vw',
     overflow: 'hidden',
@@ -22,23 +19,21 @@ function Description ({ recipe, onClick }) {
     top: -height / 2,
     zIndex: -5
   }
+
   const Ellips = {
     width: '150vw',
     height: height,
     transform: 'translateX(-25vw)',
     backgroundColor: '#fff',
     borderRadius: '50% 50% 0 0'
-
   }
+
   const DescriptionContainerStyle = {
     textAlign: 'center',
     backgroundColor: '#fff'
-    // display: 'flex',
-    // flexDirection: 'column',
-    // alignItems: 'center'
   }
+
   const CookingHatsContainerStyle = {
-    // backgroundColor: '#000000ba',
     width: '100vw',
     display: 'flex',
     justifyContent: 'center',
@@ -47,25 +42,28 @@ function Description ({ recipe, onClick }) {
     left: 0,
     top: -height / 2
   }
+
   const HeaderContainerStyle = {
     whiteSpace: 'nowrap',
     fontSize: '0.8em',
     width: '85%',
     margin: '0 auto'
   }
+
   const TextStyle = {
     margin: 0,
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     color: '#000000'
-
   }
+
   const sumaryDescriptionStyle = {
     whiteSpace: 'initial',
     textAlign: 'left'
   }
+
   return (
-    <div style={DescriptionWrapper}>
+    <div style={{ ...style, ...DescriptionWrapper }}>
       <div style={EllipsWrapper}>
         <div style={Ellips}> </div>
       </div>
@@ -113,6 +111,7 @@ function CookingHats (difficulty) {
       <CookingHat key={index} isFilled={bool} color={getTextColorFromDifficulty(difficulty)} />)
   )
 }
+
 function CookingHat ({ isFilled, color }) {
   const style = {
     width: 25,

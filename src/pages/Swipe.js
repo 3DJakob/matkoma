@@ -4,15 +4,23 @@ import Card from '../components/Card'
 import Description from '../components/Description'
 import BlurredBackground from '../components/BlurredBackground'
 import Banner from '../img/receptmatch.svg'
+import TinderCard from 'react-tinder-card'
 
-console.log(Banner)
-function Swipe ({ recepie }) {
+function Swipe ({ recepies }) {
+  const recepie = recepies[0]
+
+  const cardSwiped = (dir) => {
+    console.log('you swiped it!')
+  }
+
   return (
     <div className='swipe'>
       <img className='banner' src={Banner} alt='' />
       <BlurredBackground backgroundURL={recepie.imageURL} height='90vh' />
-      <Card recipe={recepie} showfront />
-      <Description recipe={recepie} />
+      <TinderCard style={{ zIndex: 10 }} onSwipe={cardSwiped}>
+        <Card recipe={recepie} />
+      </TinderCard>
+      <Description style={{ zIndex: 15 }} recipe={recepie} />
     </div>
 
   )

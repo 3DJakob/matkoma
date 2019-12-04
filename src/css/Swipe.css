@@ -1,3 +1,7 @@
+#root {
+    overflow: hidden;
+}
+
 .swipe {
     display: flex;
     flex-direction: column;
