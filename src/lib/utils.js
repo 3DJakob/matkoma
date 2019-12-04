@@ -25,8 +25,25 @@ const getSpecialDietsFromRecepies = (recepies) => {
 
   return diets
 }
-
+const getTextColorFromDifficulty = (difficulty) => {
+  let color
+  switch (difficulty) {
+    case 'Enkel':
+      color = '#6FC48C'
+      break
+    case 'Medel':
+      color = '#6FC48C'
+      break
+    case 'Avancerad':
+      color = '#6FC48C'
+      break
+    default:
+      color = '#6FC48C'
+  }
+  return color
+}
 export {
   getIngredientsFromRecepies,
-  getSpecialDietsFromRecepies
+  getSpecialDietsFromRecepies,
+  getTextColorFromDifficulty
 }
