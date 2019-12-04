@@ -1,23 +1,31 @@
 import React from 'react'
 
-function BlurredBackground ({ backgroundURL }) {
+function BlurredBackground ({ backgroundURL, height }) {
   const bgStyle = {
-    backgroundImage: 'url(' + backgroundURL + ')',
-    position: 'absolute',
-    top: -10,
-    bottom: -10,
-    right: -10,
-    left: -10,
+    backgroundImage: backgroundURL,
+    height: height,
+    transform: 'scale(1.1)',
     backgroundSize: 'cover',
     filter: 'blur(10px)',
     backgroundPosition: 'center',
-    zIndex: -10,
     transitionProperty: 'background',
     transitionDuration: '0.25s'
   }
+  const wrapperStyle = {
+    width: '100vw',
+    overflow: 'hidden',
+    position: 'absolute',
+    zIndex: -10,
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0
+  }
 
   return (
-    <div style={bgStyle} />
+    <div style={wrapperStyle}>
+      <div style={bgStyle} />
+    </div>
   )
 }
 
