@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/Preferences.css'
 import LogoBanner from '../components/LogoBanner'
 import TitleWithDescription from '../components/TitleWithDescription'
@@ -7,17 +7,48 @@ import { getIngredientsFromRecepies, getSpecialDietsFromRecepies } from '../lib/
 import Button from '../components/Button'
 import Checkbox from '../components/Checkbox'
 import StyledSlider from '../components/StyledSlider'
+import Tag from '../components/Tag'
+
+const uuid = require('uuid/v4')
+
+const sliderInitialValues = [0, 60]
 
 function Preferences ({ recepies }) {
+  const [userData, setUserData] = useState({ tags: [], minTime: sliderInitialValues[0], maxTime: sliderInitialValues[1], specialDiets: [] })
+
   const ingredients = getIngredientsFromRecepies(recepies)
   const specialDiets = getSpecialDietsFromRecepies(recepies)
 
-  const onSelectedIngredient = (ingredient) => {
-    console.log(ingredient)
+  const onSelectedIngredient = ingredient => {
+    const tags = Array.from(new Set([...userData.tags, ingredient]))
+    setUserData({ ...userData, tags })
   }
 
-  const toggleDiet = (bool, diet) => {
-    console.log(diet + ' ' + bool)
+  const toggleDiet = (bool, inDiet) => {
+    const newState = userData
+    if (bool) {
+      newState.specialDiets.push(inDiet)
+      setUserData({ })
+    } else {
+      newState.specialDiets = newState.specialDiets.filter(diet => inDiet !== diet)
+    }
+    setUserData(newState)
+  }
+
+  const onSliderChange = (data) => {
+    const newState = userData
+    newState.minTime = data[0]
+    newState.maxTime = data[1]
+    setUserData(newState)
+  }
+
+  const removeIngridient = (name) => {
+    const tags = Array.from(userData.tags.filter(tag => tag !== name))
+    setUserData({ ...userData, tags })
+  }
+
+  const search = () => {
+    console.log(userData) // To implement search database
   }
 
   return (
@@ -25,15 +56,20 @@ function Preferences ({ recepies }) {
       <LogoBanner />
       <div className='topBg' />
       <div className='preferencesContainer'>
-        <TitleWithDescription title='1. Lägg till ingredienser' description='Ange upp till tre ingredienser som du vill använda' />
+        <TitleWithDescription title='Lägg till ingredienser' description='Ange upp till tre ingredienser som du vill använda' />
         <SearchList placeholder='Skriv in en ingrediens...' numberOfVisibleInResult={5} list={ingredients} onClick={onSelectedIngredient} />
-        <TitleWithDescription title='2. Ange (mål)tid' description='Hur mycket tid har du?' />
-        <StyledSlider onChange={() => console.log('Slidern slidedad')} />
-        <TitleWithDescription title='3. Ange matpreferens' description='Har du någon specialkost?' />
+        <div className='tagContainer'>
+          {userData.tags.map((name) => <Tag key={uuid()} text={name} onClick={() => removeIngridient(name)} />)}
+        </div>
+        <TitleWithDescription title='Ange tid' description='Hur mycket tid har du?' />
+        <StyledSlider onChange={onSliderChange} initialValues={sliderInitialValues} />
+        <TitleWithDescription title='Ange matpreferens' description='Har du någon specialkost?' />
         <div className='dietContainer'>
           {specialDiets.map((diet) => <Checkbox style={{ width: '50%' }} key={diet} label={diet} onPress={(state) => toggleDiet(state, diet)} />)}
         </div>
-        <Button text='Hitta match' upperCase onClick={() => ('Sökknappen klickt')} />
+        <div className='bottomContainer'>
+          <Button text='Hitta match' onClick={search} />
+        </div>
       </div>
     </div>
   )

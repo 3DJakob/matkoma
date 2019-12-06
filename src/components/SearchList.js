@@ -24,9 +24,7 @@ function SearchList ({ placeholder, numberOfVisibleInResult, list, onClick }) {
     backgroundColor: '#fff',
     boxShadow: '0 0 20px 0 rgba(0,0,0,0.3)',
     borderRadius: 20,
-    overflow: 'hidden',
-    width: 'calc(100% - 20px)',
-    margin: 10
+    overflow: 'hidden'
   }
 
   const inputStyle = {
