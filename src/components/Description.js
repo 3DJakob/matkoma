@@ -2,6 +2,8 @@ import React from 'react'
 import { getTextColorFromDifficulty } from '../lib/utils'
 import IngredientList from './Ingredient'
 import '../css/global.css'
+import arrowLogo from '../img/arrow.svg'
+import StepsList from './Steps'
 
 function Description ({ style = {}, recipe, onClick }) {
   const height = 100
@@ -22,7 +24,7 @@ function Description ({ style = {}, recipe, onClick }) {
 
   const Ellips = {
     width: '150vw',
-    height: height,
+    height: height * 1.5,
     transform: 'translateX(-25vw)',
     backgroundColor: '#fff',
     borderRadius: '50% 50% 0 0'
@@ -36,11 +38,11 @@ function Description ({ style = {}, recipe, onClick }) {
   const CookingHatsContainerStyle = {
     width: '100vw',
     display: 'flex',
-    justifyContent: 'center',
-    margin: '10px 0 0 0',
-    position: 'absolute',
-    left: 0,
-    top: -height / 2
+    justifyContent: 'center'
+    // margin: '10px 0 0 0',
+    // position: 'absolute',
+    // left: 0,
+    // top: -height / 2
   }
 
   const HeaderContainerStyle = {
@@ -61,16 +63,30 @@ function Description ({ style = {}, recipe, onClick }) {
     whiteSpace: 'initial',
     textAlign: 'left'
   }
-
+  const iconStyleContainer = {
+    position: 'absolute',
+    top: -height / 2,
+    width: '100vw',
+    margin: '15px 0px 0px 0px'
+  }
+  const arrowIconStyle = {
+    width: 40,
+    opacity: 0.5
+  }
   return (
     <div style={{ ...style, ...DescriptionWrapper }}>
       <div style={EllipsWrapper}>
         <div style={Ellips}> </div>
       </div>
       <div style={DescriptionContainerStyle}>
+        <div style={iconStyleContainer}>
+          <img src={arrowLogo} alt='' style={arrowIconStyle} />
+        </div>
+
         <div style={CookingHatsContainerStyle}>
           {CookingHats(recipe.difficulty)}
         </div>
+
         <div style={HeaderContainerStyle}>
           <h1 className='heading' style={TextStyle}>
             {recipe.title}
@@ -83,6 +99,9 @@ function Description ({ style = {}, recipe, onClick }) {
           </p>
           <div>
             <IngredientList recipe={recipe} />
+          </div>
+          <div>
+            <StepsList recipe={recipe} />
           </div>
         </div>
 
