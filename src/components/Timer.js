@@ -7,9 +7,13 @@ function Timer ({ totalTime, timeLeft, isRunning, onClick }) {
   const borderRadius = 6
   const buttonText = isRunning ? 'Avsluta timer' : 'Starta timer'
 
-  const hoursLeft = new Date(timeLeft).getHours() - 1
-  const minutesLeft = new Date(timeLeft).getMinutes()
-  const secondsLeft = new Date(timeLeft).getSeconds()
+  const currentTimeLeft = new Date(timeLeft)
+
+  const offsetHours = currentTimeLeft.getTimezoneOffset() / 60
+
+  const hoursLeft = currentTimeLeft.getHours() + offsetHours
+  const minutesLeft = currentTimeLeft.getMinutes()
+  const secondsLeft = currentTimeLeft.getSeconds()
 
   // style på bakgrunden
   const barBackgroundStyle = {
