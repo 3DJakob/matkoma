@@ -5,11 +5,17 @@ import { ThemeProvider } from '@material-ui/styles'
 
 function StyledSlider ({ onChange, initialValues = [0, 60] }) {
   const [timerange, setTimerange] = React.useState(initialValues)
+  const maxTime = 100
+  const infTime = 10000 // "infinite" number of minutes, set when slider is dragged to max
 
   const changeTime = (event, newTime) => {
     setTimerange(newTime)
-    console.log(timerange)
     onChange(newTime)
+
+    if (timerange[1] === maxTime) {
+      onChange([timerange[0], infTime])
+    }
+    console.log(timerange)
   }
 
   const sliderColor = '#6FC58C'
@@ -22,7 +28,8 @@ function StyledSlider ({ onChange, initialValues = [0, 60] }) {
     overrides: {
       MuiSlider: {
         root: {
-          width: 'calc(100% - ' + thumbDiameter / 2 + 'px)'
+          width: 'calc(100% - ' + thumbDiameter / 2 + 'px)',
+          paddingTop: 5
         },
         thumb: {
           color: sliderColor,
@@ -48,14 +55,35 @@ function StyledSlider ({ onChange, initialValues = [0, 60] }) {
       }
     }
   })
+
+  const valueContainerStyle = {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    display: 'flex'
+  }
+
+  const valueTextStyle = {
+    color: '#4E4E4E',
+    fontFamily: 'Lato, sans-serif',
+    fontSize: 14,
+    fontWeight: 'bold',
+    margin: 0
+  }
+
   return (
-    <ThemeProvider theme={sliderTheme}>
-      <Slider
-        value={timerange}
-        onChange={changeTime}
-        valueLabelDisplay='auto'
-      />
-    </ThemeProvider>
+    <div>
+      <div style={valueContainerStyle}>
+        <p style={valueTextStyle}>{timerange[0]} min</p>
+        <p style={valueTextStyle}>{timerange[1]}{timerange[1] === maxTime ? '+' : ''} min</p>
+      </div>
+      <ThemeProvider theme={sliderTheme}>
+        <Slider
+          value={timerange}
+          onChange={changeTime}
+        />
+      </ThemeProvider>
+    </div>
+
   )
 }
 
