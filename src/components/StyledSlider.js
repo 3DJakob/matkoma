@@ -3,8 +3,8 @@ import Slider from '@material-ui/core/Slider'
 import { createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from '@material-ui/styles'
 
-function StyledSlider ({ onChange }) {
-  const [timerange, setTimerange] = React.useState([20, 80])
+function StyledSlider ({ onChange, initialValues = [0, 60] }) {
+  const [timerange, setTimerange] = React.useState(initialValues)
 
   const changeTime = (event, newTime) => {
     setTimerange(newTime)
