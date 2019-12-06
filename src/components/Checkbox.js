@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../css/animations.css'
+import '../css/global.css'
 
 class Checkbox extends Component {
   constructor (props) {
@@ -12,29 +13,32 @@ class Checkbox extends Component {
   render () {
     const { label } = this.props
     const { isChecked } = this.state
+    const { topMargin } = this.props
     const checkboxStyle = {
       color: '#000',
       fontFamily: '"Lato", sans-serif',
-      fontSize: '20px',
+      fontSize: 20,
       textAlign: 'right',
       fontWeight: 'regular',
-      padding: '15px',
-      margin: '5px',
-      borderRadius: '100px',
+      padding: 10,
+      margin: 5,
+      borderRadius: 100,
       border: '2px solid #6fc48c'
     }
 
     const checkboxRow = {
       display: 'flex',
-      alignItems: 'center',
-      color: '#000'
+      alignItems: 'flex-start',
+      color: '#000',
+      position: 'relative'
     }
 
     const circleStyle = {
-      width: 20,
-      height: 20,
+      width: 12,
+      height: 12,
       position: 'absolute',
-      marginLeft: 12,
+      top: 10,
+      marginLeft: 11,
       borderRadius: '100%',
       backgroundColor: '#6fc48c',
       animationDuration: '0.3s',
@@ -50,7 +54,10 @@ class Checkbox extends Component {
       height: '100%',
       userSelect: 'none',
       alignItems: 'center',
-      flexGrow: 1
+      flexGrow: 1,
+      whiteSpace: 'initial',
+      textAlign: 'left',
+      marginTop: topMargin
     }
 
     const toggleCheckboxChange = () => {

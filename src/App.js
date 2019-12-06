@@ -12,7 +12,7 @@ function App () {
       <meta name='viewport' content='width=device-width, user-scalable=no' />
       <link rel='stylesheet' href='https://use.typekit.net/kja2qvx.css' />
       {route === 'preferences' ? <Preferences recepies={recepies} /> : ''}
-      {route === 'swipe' ? <Swipe /> : ''}
+      {route === 'swipe' ? <Swipe recepies={recepies} /> : ''}
     </div>
   )
 }

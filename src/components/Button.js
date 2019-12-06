@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button ({ text, upperCase, onClick }) {
+function Button ({ text, upperCase, onClick, style }) {
   Button.defaultProps = {
     upperCase: false
   }
@@ -19,7 +19,7 @@ function Button ({ text, upperCase, onClick }) {
   }
 
   return (
-    <button onClick={onClick} type='button' style={buttonStyle}>{text}</button>
+    <button onClick={onClick} type='button' style={Object.assign(buttonStyle, style)}>{text}</button>
   )
 }
 
