@@ -17,9 +17,13 @@ function Swipe ({ recepies }) {
     <div className='swipe'>
       <img className='banner' src={Banner} alt='' />
       <BlurredBackground backgroundURL={recepie.imageURL} height='90vh' />
-      <TinderCard style={{ zIndex: 10 }} onSwipe={cardSwiped}>
-        <Card recipe={recepie} />
-      </TinderCard>
+      <div className='swipeArea'>
+        <div className='CardContainer'>
+          <TinderCard className='tinderCard' onSwipe={cardSwiped} onCardLeftScreen={cardSwiped}>
+            <Card recipe={recepie} />
+          </TinderCard>
+        </div>
+      </div>
       <Description style={{ zIndex: 15 }} recipe={recepie} />
     </div>
 

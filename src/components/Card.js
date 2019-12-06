@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card ({ recipe, showfront = true, onClick }) {
   const CardStyle = {
-    height: '50vh',
+    height: '100%',
     width: '80vw',
     position: 'relative',
     transition: 'transform 2s',

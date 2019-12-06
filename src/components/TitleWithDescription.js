@@ -1,10 +1,6 @@
 import React from 'react'
 
 function TitleWithDescription ({ title, description }) {
-  const divStyle = {
-    paddingLeft: 5
-  }
-
   const titleStyle = {
     color: '#000000',
     fontFamily: 'Roboto Slab, sans-serif',
@@ -21,7 +17,7 @@ function TitleWithDescription ({ title, description }) {
   }
 
   return (
-    <div style={divStyle}>
+    <div>
       <h1 style={titleStyle}>{title}</h1>
       <p style={descriptionStyle}>{description}</p>
     </div>
