@@ -10,7 +10,7 @@ function Description ({ style = {}, recipe, onClick }) {
 
   const DescriptionWrapper = {
     position: 'relative',
-    margin: height + 'px 0 0 0',
+    margin: '-80px 0 0 0',
     width: '100vw'
   }
 
