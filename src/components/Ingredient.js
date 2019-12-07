@@ -26,7 +26,6 @@ function IngredientList ({ recipe }) {
 
   const onNewPortion = function (event) {
     setSelectedNumberOfPortions(event.target.value)
-    console.log(event.target.value)
   }
   return (
     <div style={wrapperStyle}>
