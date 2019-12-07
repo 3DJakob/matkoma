@@ -13,7 +13,23 @@ const uuid = require('uuid/v4')
 
 const sliderInitialValues = [0, 60]
 
-function Preferences ({ recepies }) {
+/**
+ * Check if the first array completely eclipses array 2.
+ * @param {[String]} arr1
+ * @param {[String]} arr2
+ */
+const array1ContainsArray2 = (arr1, arr2) => {
+  if (arr2.length === 0) { return true }
+  const inCommon = arr2.filter((arr2Item) => arr1.includes(arr2Item))
+  if (arr2.length === inCommon.length) { return true }
+  return false
+}
+
+/**
+ * Preferences page
+ * @param {[recepie]} recepies - an array of recepies
+ */
+function Preferences ({ recepies, onRecepieResult }) {
   const [userData, setUserData] = useState({ tags: [], minTime: sliderInitialValues[0], maxTime: sliderInitialValues[1], specialDiets: [] })
 
   const ingredients = getIngredientsFromRecepies(recepies)
@@ -47,8 +63,32 @@ function Preferences ({ recepies }) {
     setUserData({ ...userData, tags })
   }
 
-  const search = () => {
-    console.log(userData) // To implement search database
+  const search = async () => {
+    const checkSpecialDiets = (userDiets, recepieDiets) => {
+      return array1ContainsArray2(recepieDiets, userDiets)
+    }
+
+    const checkTags = (recepieIngredients, tags) => {
+      const ingredients = recepieIngredients.map((ingredient) => ingredient.name)
+      return array1ContainsArray2(ingredients, tags)
+    }
+
+    const checkTime = (cookingTime, max, min) => {
+      if (min <= cookingTime && cookingTime <= max) {
+        return true
+      }
+      return false
+    }
+
+    const resultingRecepies = recepies.filter((recepie) =>
+      checkTime(recepie.cookingTime, userData.maxTime, userData.minTime) && // This filter runs fastest!
+      checkTags(recepie.ingredients, userData.tags) &&
+      checkSpecialDiets(userData.specialDiets, recepie.specialDiets)
+    )
+
+    // console.log('result is: ')
+    // console.log(resultingRecepies)
+    onRecepieResult(resultingRecepies)
   }
 
   return (
