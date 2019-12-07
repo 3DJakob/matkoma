@@ -100,7 +100,7 @@ function Description ({ style = {}, recipe, onClick }) {
           <div>
             <IngredientList recipe={recipe} />
           </div>
-          <div>
+          <div style={{ margin: '0 0 50px 0' }}>
             <StepsList recipe={recipe} />
           </div>
         </div>
