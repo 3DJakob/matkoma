@@ -63,7 +63,7 @@ function Timer ({ totalTime, timeLeft, isRunning, onClick }) {
   }
 
   return (
-    <div>
+    <div style={{ marginLeft: 35 }}>
       <div style={buttonContainerStyle}>
         <Button text={buttonText} onClick={onClick} style={buttonStyle} />
         <p style={timeStyle}>{hoursLeft === 0 ? '' : ('0' + hoursLeft).slice(-2) + ':'}{('0' + minutesLeft).slice(-2)}:{('0' + secondsLeft).slice(-2)}</p>
