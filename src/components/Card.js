@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/animations.css'
 
 function Card ({ recipe, showfront = true, onClick }) {
   const CardStyle = {
@@ -7,7 +8,8 @@ function Card ({ recipe, showfront = true, onClick }) {
     position: 'relative',
     transition: 'transform 2s',
     transformStyle: 'preserve-3d',
-    transform: showfront ? 'rotateY(180deg)' : 'rotateY(0deg)'
+    animation: showfront ? 'flip 2s forwards' : ''
+    // transform: showfront ?  : 'rotateY(0deg)'
   }
 
   const FrontStyle = {
