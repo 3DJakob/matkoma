@@ -86,7 +86,7 @@ function Swipe ({ recepies }) {
       </div>
       <CSSTransition in={showDescription} timeout={500} classNames='description-transition'>
         <div onTouchEnd={onTouchEnd}>
-          <Description style={{ zIndex: 15 }} recipe={currentRecipe} />
+          <Description arrowDown={showingRecipe} style={{ zIndex: 15 }} recipe={currentRecipe} />
         </div>
       </CSSTransition>
     </div>
