@@ -14,6 +14,7 @@ function Swipe ({ recepies }) {
   const scaleRef = useRef(null)
   const [amountOfCardsToShow, setAmountOfCardsToShow] = useState(recepies.length - cardsToShowAtTheTime)
   const [currentRecipe, setCurrentRecipe] = useState(recepies[recepies.length - 1])
+  const [showingRecipe, setShowingRecipe] = useState(false)
   useEffect(() => {
     // document.title = `You clicked ${amountOfCardsToShow} times`
     document.title = currentRecipe.title
@@ -46,6 +47,7 @@ function Swipe ({ recepies }) {
   const onScroll = (e) => {
     const res = Math.max(Math.min(1 + getScrollInDecimal(), 1.25), 1)
     scaleRef.current.style.transform = 'scale(' + res + ')'
+    setShowingRecipe(getScrollInDecimal() > 0.2)
   }
 
   window.addEventListener('scroll', onScroll)
@@ -79,7 +81,7 @@ function Swipe ({ recepies }) {
         </div>
       </div>
       <div onTouchEnd={onTouchEnd}>
-        <Description style={{ zIndex: 15 }} recipe={currentRecipe} />
+        <Description arrowDown={showingRecipe} style={{ zIndex: 15 }} recipe={currentRecipe} />
       </div>
     </div>
 
