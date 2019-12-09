@@ -70,7 +70,7 @@ function Swipe ({ recepies }) {
       <div className='swipeArea'>
         <div className='CardContainer'>
           {recepies.map((recepie, index) =>
-            <div style={scaleStyle} className='cardScaler' key={recepie.id} ref={scaleRef}>
+            <div style={scaleStyle} className='cardScaler' key={index} ref={scaleRef}>
               <TinderCard className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
                 <Card key={recepie.id + 'card'} recipe={recepie} />
               </TinderCard>
