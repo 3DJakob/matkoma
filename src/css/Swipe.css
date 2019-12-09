@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .swipeArea {
     height: 100vh;
@@ -35,4 +35,10 @@
     z-index: 10;
     height: 100%;
     max-height: 485px;
+    position: absolute;
+    animation: fade 200ms forwards;
+}
+
+.hidden {
+    display: none;
 }
