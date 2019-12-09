@@ -4,6 +4,7 @@ import '../css/global.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
+const uuid = require('uuid/v4')
 const selectOptions = [1, 2, 3, 4, 6, 8, 10]
 const wrapperStyle = {
   display: 'flex',
@@ -36,7 +37,7 @@ function IngredientList ({ recipe }) {
         </select>
         <FontAwesomeIcon style={iconStyle} icon={faChevronDown} />
       </div>
-      {recipe.ingredients.map(i => <Ingredient key={i.name} ingredient={i} multiplier={selectedNumberOfPortions / recipe.numberOfPortions} />)}
+      {recipe.ingredients.map(i => <Ingredient key={uuid()} ingredient={i} multiplier={selectedNumberOfPortions / recipe.numberOfPortions} />)}
     </div>
   )
 }
