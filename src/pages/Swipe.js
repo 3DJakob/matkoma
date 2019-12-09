@@ -6,14 +6,17 @@ import BlurredBackground from '../components/BlurredBackground'
 import Banner from '../img/receptmatch.svg'
 import TinderCard from 'react-tinder-card'
 import { CSSTransition } from 'react-transition-group'
+import * as Scroll from 'react-scroll'
 
 const cardsToShowAtTheTime = 4
 function Swipe ({ recepies }) {
   const buttonRef = useRef(null)
+  const scaleRef = useRef(null)
   const [amountOfCardsToShow, setAmountOfCardsToShow] = useState(recepies.length - cardsToShowAtTheTime)
   const [currentRecipe, setCurrentRecipe] = useState(recepies[recepies.length - 1])
   const [showDescription, setShowDescription] = useState(false)
 
+  const [showingRecipe, setShowingRecipe] = useState(false)
   useEffect(() => {
     setShowDescription(true)
     // document.title = `You clicked ${amountOfCardsToShow} times`
@@ -37,22 +40,54 @@ function Swipe ({ recepies }) {
     display: 'none'
   }
 
+  const scaleStyle = {
+    position: 'absolute'
+  }
+
+  const getScrollInDecimal = () => {
+    return (window.scrollY / (document.documentElement.clientHeight - 150))
+  }
+
+  const onScroll = (e) => {
+    const res = Math.max(Math.min(1 + getScrollInDecimal(), 1.25), 1)
+    scaleRef.current.style.transform = 'scale(' + res + ')'
+    setShowingRecipe(getScrollInDecimal() > 0.2)
+  }
+
+  window.addEventListener('scroll', onScroll)
+
+  const onTouchEnd = () => {
+    if (getScrollInDecimal() > 0.2) {
+      if (getScrollInDecimal() * document.documentElement.clientHeight < 300) {
+        // Scroll to recepie
+        Scroll.animateScroll.scrollTo(300, { duration: 200 })
+      }
+    } else {
+      // Scroll back!
+      Scroll.animateScroll.scrollTo(0, { duration: 200 })
+    }
+  }
+
   return (
-    <div className='swipe'>
+    <div className='swipe' onScroll={onScroll}>
       <button ref={buttonRef} style={hiddenStyle} onClick={increase}>increase!</button>
       <img className='banner' src={Banner} alt='' />
       <BlurredBackground backgroundURL={currentRecipe.imageURL} height='90vh' />
       <div className='swipeArea'>
         <div className='CardContainer'>
           {recepies.map((recepie, index) =>
-            <TinderCard key={index} className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
-              <Card recipe={recepie} />
-            </TinderCard>
+            <div style={scaleStyle} className='cardScaler' key={index} ref={scaleRef}>
+              <TinderCard className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
+                <Card key={recepie.id + 'card'} recipe={recepie} />
+              </TinderCard>
+            </div>
           )}
         </div>
       </div>
       <CSSTransition in={showDescription} timeout={500} classNames='description-transition'>
-        <Description style={{ zIndex: 15 }} recipe={currentRecipe} />
+        <div onTouchEnd={onTouchEnd}>
+          <Description style={{ zIndex: 15 }} recipe={currentRecipe} />
+        </div>
       </CSSTransition>
     </div>
 

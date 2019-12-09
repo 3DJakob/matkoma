@@ -6,7 +6,7 @@ import arrowLogo from '../img/arrow.svg'
 import StepsList from './Steps'
 import '../css/animations.css'
 
-function Description ({ style = {}, recipe, onClick }) {
+function Description ({ style = {}, recipe, onClick, arrowDown = false }) {
   const height = 100
 
   const DescriptionWrapper = {
@@ -68,7 +68,9 @@ function Description ({ style = {}, recipe, onClick }) {
     position: 'absolute',
     top: -height / 2,
     width: '100vw',
-    margin: '15px 0px 0px 0px'
+    margin: '15px 0px 0px 0px',
+    transform: arrowDown ? 'rotate(180deg)' : 'rotate(0)',
+    transition: '200ms'
   }
   const arrowIconStyle = {
     width: 40,
