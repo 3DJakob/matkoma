@@ -4,6 +4,7 @@ import IngredientList from './Ingredient'
 import '../css/global.css'
 import arrowLogo from '../img/arrow.svg'
 import StepsList from './Steps'
+import '../css/animations.css'
 
 function Description ({ style = {}, recipe, onClick }) {
   const height = 100
@@ -11,7 +12,8 @@ function Description ({ style = {}, recipe, onClick }) {
   const DescriptionWrapper = {
     position: 'relative',
     margin: '-80px 0 0 0',
-    width: '100vw'
+    width: '100vw',
+    animation: 'slideUp 400ms forwards'
   }
 
   const EllipsWrapper = {
