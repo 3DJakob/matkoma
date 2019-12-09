@@ -18,7 +18,7 @@ function App () {
       {window.scrollTo(0, 0) /* scroll up on route change} */}
       <meta name='viewport' content='width=device-width, user-scalable=no' />
       <link rel='stylesheet' href='https://use.typekit.net/kja2qvx.css' />
-      {route === 'preferences' ? <Preferences onRecepieResult={onFilteredRecepies} recepies={recepies} /> : ''}
+      {route === 'preferences' ? <Preferences onRecepieResult={onFilteredRecepies} recepies={recipes} /> : ''}
       {route === 'swipe' ? <Swipe recepies={resultRecepies} /> : ''}
     </div>
   )
