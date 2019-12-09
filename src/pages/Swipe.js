@@ -5,23 +5,23 @@ import Description from '../components/Description'
 import BlurredBackground from '../components/BlurredBackground'
 import Banner from '../img/receptmatch.svg'
 import TinderCard from 'react-tinder-card'
+import { CSSTransition } from 'react-transition-group'
 
 const cardsToShowAtTheTime = 4
-
 function Swipe ({ recepies }) {
   const buttonRef = useRef(null)
   const [amountOfCardsToShow, setAmountOfCardsToShow] = useState(recepies.length - cardsToShowAtTheTime)
   const [currentRecipe, setCurrentRecipe] = useState(recepies[recepies.length - 1])
+  const [showDescription, setShowDescription] = useState(false)
 
   useEffect(() => {
+    setShowDescription(true)
     // document.title = `You clicked ${amountOfCardsToShow} times`
     document.title = currentRecipe.title
   })
 
-  // const [cardShowFront, setCardShowFront] = useState(false)
   const cardSwiped = (dir) => {
-    // setCurrentRecipe(recipes[counter])
-    // toggleFront()
+    setShowDescription(false)
     buttonRef.current.click()
   }
 
@@ -51,7 +51,9 @@ function Swipe ({ recepies }) {
           )}
         </div>
       </div>
-      <Description style={{ zIndex: 15 }} recipe={currentRecipe} />
+      <CSSTransition in={showDescription} timeout={500} classNames='description-transition'>
+        <Description style={{ zIndex: 15 }} recipe={currentRecipe} />
+      </CSSTransition>
     </div>
 
   )

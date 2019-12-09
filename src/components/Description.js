@@ -12,8 +12,7 @@ function Description ({ style = {}, recipe, onClick }) {
   const DescriptionWrapper = {
     position: 'relative',
     margin: '-80px 0 0 0',
-    width: '100vw',
-    animation: 'slideUp 400ms forwards'
+    width: '100vw'
   }
 
   const EllipsWrapper = {

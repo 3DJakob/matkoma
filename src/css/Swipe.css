@@ -42,3 +42,20 @@
 .hidden {
     display: none;
 }
+
+.description-transition-enter,
+.description-transition-appear {
+    transform: translateY(150px);
+}
+.description-transition-enter-active,
+.description-transition-appear-active {
+    transform: translateY(0px);
+    transition: 500ms;
+}
+.description-transition-exit {
+    transform: translateY(0px);
+}
+.description-transition-exit-active {
+    transform: translateY(160px);
+    transition: 500ms;
+}
