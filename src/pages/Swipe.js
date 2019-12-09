@@ -45,8 +45,8 @@ function Swipe ({ recepies }) {
       <div className='swipeArea'>
         <div className='CardContainer'>
           {recepies.map((recepie, index) =>
-            <TinderCard key={recepie.id} className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
-              <Card key={recepie.id + 'card'} recipe={recepie} />
+            <TinderCard key={index} className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
+              <Card recipe={recepie} />
             </TinderCard>
           )}
         </div>
