@@ -14,13 +14,15 @@ function Swipe ({ recepies }) {
   const [currentRecipe, setCurrentRecipe] = useState(recepies[recepies.length - 1])
 
   useEffect(() => {
-    document.title = `You clicked ${amountOfCardsToShow} times`
+    // document.title = `You clicked ${amountOfCardsToShow} times`
+    document.title = currentRecipe.title
   })
 
-  const [cardShowFront, setCardShowFront] = useState(false)
+  // const [cardShowFront, setCardShowFront] = useState(false)
   const cardSwiped = (dir) => {
-    setCurrentRecipe(recipes[counter])
-    toggleFront()
+    // setCurrentRecipe(recipes[counter])
+    // toggleFront()
+    buttonRef.current.click()
   }
 
   const increase = () => {
