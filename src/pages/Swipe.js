@@ -45,7 +45,7 @@ function Swipe ({ recepies }) {
   }
 
   const onScroll = (e) => {
-    const res = Math.max(Math.min(1 + getScrollInDecimal(), 1.25), 1)
+    const res = Math.max(Math.min(1 + getScrollInDecimal(), 1.30), 1)
     scaleRef.current.style.transform = 'scale(' + res + ')'
     setShowingRecipe(getScrollInDecimal() > 0.2)
   }
