@@ -40,10 +40,6 @@ function Swipe ({ recepies }) {
     display: 'none'
   }
 
-  const scaleStyle = {
-    position: 'absolute'
-  }
-
   const getScrollInDecimal = () => {
     return (window.scrollY / (document.documentElement.clientHeight - 150))
   }
@@ -74,13 +70,11 @@ function Swipe ({ recepies }) {
       <img className='banner' src={Banner} alt='' />
       <BlurredBackground backgroundURL={currentRecipe.imageURL} height='90vh' />
       <div className='swipeArea'>
-        <div className='CardContainer'>
+        <div className='CardContainer' ref={scaleRef}>
           {recepies.map((recepie, index) =>
-            <div style={scaleStyle} className='cardScaler' key={index} ref={scaleRef}>
-              <TinderCard className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
-                <Card key={recepie.id + 'card'} recipe={recepie} />
-              </TinderCard>
-            </div>
+            <TinderCard key={index} className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
+              <Card key={recepie.id + 'card'} recipe={recepie} />
+            </TinderCard>
           )}
         </div>
       </div>
