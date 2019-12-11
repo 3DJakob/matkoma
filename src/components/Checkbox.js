@@ -37,7 +37,7 @@ class Checkbox extends Component {
       width: 12,
       height: 12,
       position: 'absolute',
-      top: 10,
+      top: 11,
       marginLeft: 11,
       borderRadius: '100%',
       backgroundColor: '#6fc48c',
