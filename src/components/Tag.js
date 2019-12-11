@@ -12,7 +12,7 @@ function Tag ({ text, onClick }) {
     fontWeight: 'regular',
     border: 'none',
     padding: 10,
-    margin: 5,
+    margin: '0 10px 10px 0',
     borderRadius: 100,
     display: 'flex',
     justifyContent: 'center',

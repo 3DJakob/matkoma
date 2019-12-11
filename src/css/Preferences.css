@@ -27,3 +27,16 @@
   top: 0px;
   z-index: -1;
 }
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.bottomContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
