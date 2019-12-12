@@ -5,10 +5,10 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 function SearchButton ({ func }) {
   const buttonStyle = {
     position: 'absolute',
-    top: 12,
-    left: 13,
-    width: 30,
-    height: 30,
+    top: 20,
+    left: 20,
+    width: 60,
+    height: 60,
     borderRadius: '50%',
     boxShadow: '0 0 10px 1px #0000007a',
     display: 'flex',
@@ -19,7 +19,7 @@ function SearchButton ({ func }) {
   }
   return (
     <div onClick={func} style={buttonStyle}>
-      <FontAwesomeIcon icon={faSearch} color='#6fc48c' />
+      <FontAwesomeIcon icon={faSearch} color='#6fc48c' size='2x' />
     </div>
 
   )
