@@ -80,7 +80,7 @@ function Swipe ({ recepies, onBack }) {
         <div className='CardContainer' ref={scaleRef}>
           {recepies.map((recepie, index) =>
             <TinderCard key={index} className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
-              <Card key={recepie.id + 'card'} showfront={recepie.id === currentRecipe.id} recipe={recepie} />
+              <Card key={recepie.id + 'card'} showfront={index > amountOfCardsToShow + cardsToShowAtTheTime - 2} recipe={recepie} />
             </TinderCard>
           )}
         </div>
