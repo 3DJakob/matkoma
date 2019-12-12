@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 400ms;
 }
 .swipeArea {
     height: 100vh;
