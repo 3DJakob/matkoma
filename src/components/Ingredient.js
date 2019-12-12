@@ -45,7 +45,7 @@ function IngredientList ({ recipe }) {
 function Ingredient ({ ingredient, multiplier }) {
   return (
     <div className='bodytext'>
-      {ingredient.comment} {ingredient.amount ? ingredient.amount * multiplier : ''} {ingredient.unit} {ingredient.name}
+      {ingredient.comment} {ingredient.amount ? Math.round(ingredient.amount * multiplier * 100) / 100 : ''} {ingredient.unit} {ingredient.name}
     </div>
   )
 }
