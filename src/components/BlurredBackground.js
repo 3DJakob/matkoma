@@ -9,7 +9,7 @@ function BlurredBackground ({ backgroundURL, height }) {
     filter: 'blur(10px)',
     backgroundPosition: 'center',
     transitionProperty: 'background',
-    transitionDuration: '0.25s'
+    transitionDuration: '1.4s'
   }
   const wrapperStyle = {
     width: '100vw',
