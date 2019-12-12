@@ -24,7 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .swipeArea {
     height: 100vh;
@@ -59,4 +58,14 @@
 .description-transition-exit-active {
     transform: translateY(160px);
     transition: 500ms;
+}
+
+.noTap {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
 }

@@ -16,8 +16,9 @@ function Swipe ({ recepies, onBack }) {
   const [amountOfCardsToShow, setAmountOfCardsToShow] = useState(recepies.length - cardsToShowAtTheTime)
   const [currentRecipe, setCurrentRecipe] = useState(recepies[recepies.length - 1])
   const [showDescription, setShowDescription] = useState(false)
-
   const [showingRecipe, setShowingRecipe] = useState(false)
+  const [noRecipeTap, setNoRecipeTap] = useState(false)
+
   useEffect(() => {
     setShowDescription(true)
     // document.title = `You clicked ${amountOfCardsToShow} times`
@@ -59,9 +60,11 @@ function Swipe ({ recepies, onBack }) {
         // Scroll to recepie
         Scroll.animateScroll.scrollTo(300, { duration: 200 })
       }
+      setNoRecipeTap(true)
     } else {
       // Scroll back!
       Scroll.animateScroll.scrollTo(0, { duration: 200 })
+      setNoRecipeTap(false)
     }
   }
   return (
@@ -71,6 +74,7 @@ function Swipe ({ recepies, onBack }) {
       <img className='banner' src={Banner} alt='' />
       <BlurredBackground backgroundURL={currentRecipe.imageURL} height='90vh' />
       <div className='swipeArea'>
+        {noRecipeTap ? <div onTouchEnd={onTouchEnd} className='noTap' /> : ''}
         <div className='CardContainer' ref={scaleRef}>
           {recepies.map((recepie, index) =>
             <TinderCard key={index} className={index > amountOfCardsToShow ? 'tinderCard' : 'tinderCard hidden'} onSwipe={cardSwiped} onCardLeftScreen={() => console.log('left sceen')}>
