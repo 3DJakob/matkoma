@@ -7,9 +7,10 @@ import Banner from '../img/receptmatch.svg'
 import TinderCard from 'react-tinder-card'
 import { CSSTransition } from 'react-transition-group'
 import * as Scroll from 'react-scroll'
+import SearchButton from '../components/SearchButton'
 
 const cardsToShowAtTheTime = 4
-function Swipe ({ recepies }) {
+function Swipe ({ recepies, onBack }) {
   const buttonRef = useRef(null)
   const scaleRef = useRef(null)
   const [amountOfCardsToShow, setAmountOfCardsToShow] = useState(recepies.length - cardsToShowAtTheTime)
@@ -22,7 +23,6 @@ function Swipe ({ recepies }) {
     // document.title = `You clicked ${amountOfCardsToShow} times`
     document.title = currentRecipe.title
   })
-
   const cardSwiped = (dir) => {
     setShowDescription(false)
     buttonRef.current.click()
@@ -45,6 +45,7 @@ function Swipe ({ recepies }) {
   }
 
   const onScroll = (e) => {
+    if (!scaleRef.current) { return }
     const res = Math.max(Math.min(1 + getScrollInDecimal(), 1.30), 1)
     scaleRef.current.style.transform = 'scale(' + res + ')'
     setShowingRecipe(getScrollInDecimal() > 0.2)
@@ -63,9 +64,9 @@ function Swipe ({ recepies }) {
       Scroll.animateScroll.scrollTo(0, { duration: 200 })
     }
   }
-
   return (
     <div className='swipe' onScroll={onScroll}>
+      <SearchButton func={onBack} />
       <button ref={buttonRef} style={hiddenStyle} onClick={increase}>increase!</button>
       <img className='banner' src={Banner} alt='' />
       <BlurredBackground backgroundURL={currentRecipe.imageURL} height='90vh' />

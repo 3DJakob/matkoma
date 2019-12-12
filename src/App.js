@@ -12,7 +12,9 @@ function App () {
     setResultRecepies(recepies)
     SetRoute('swipe')
   }
-
+  const onBack = () => {
+    SetRoute('preferences')
+  }
   return (
     <div className='App'>
       <link href='https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap' rel='stylesheet' />
@@ -20,7 +22,7 @@ function App () {
       <meta name='viewport' content='width=device-width, user-scalable=no' />
       <link rel='stylesheet' href='https://use.typekit.net/kja2qvx.css' />
       {route === 'preferences' ? <Preferences onRecepieResult={onFilteredRecepies} recepies={recipes} /> : ''}
-      {route === 'swipe' ? <Swipe recepies={resultRecepies} /> : ''}
+      {route === 'swipe' ? <Swipe recepies={resultRecepies} onBack={onBack} /> : ''}
     </div>
   )
 }
