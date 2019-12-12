@@ -38,6 +38,9 @@ function Step ({ step }) {
     if (matchedTimer.isRunning) {
       matchedTimer.startTime = new Date().getTime()
     } else {
+      if (matchedTimer.timeLeft <= 0) {
+        window.alert('Håll i hatten, timern är klar!')
+      }
       matchedTimer.startTime = null
       matchedTimer.timeLeft = matchedTimer.totalTime
     }
