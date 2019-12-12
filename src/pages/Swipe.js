@@ -62,8 +62,10 @@ function Swipe ({ recepies, onBack }) {
       }
       setNoRecipeTap(true)
     } else {
-      // Scroll back!
-      Scroll.animateScroll.scrollTo(0, { duration: 200 })
+      // Scroll back! > 0 to not animate on iOS negative rubberbanding
+      if (getScrollInDecimal() > 0) {
+        Scroll.animateScroll.scrollTo(0, { duration: 200 })
+      }
       setNoRecipeTap(false)
     }
   }
