@@ -22,8 +22,8 @@
 
 .CardContainer {
     position: absolute;
-    top: 130px;
-    bottom: 140px;
+    top: 140px;
+    bottom: 165px;
     left: 0;
     right: 0;
     display: flex;
