@@ -3,6 +3,7 @@ import '../css/Swipe.css'
 import Card from '../components/Card'
 import Description from '../components/Description'
 import BlurredBackground from '../components/BlurredBackground'
+import NoResults from '../components/NoResults'
 import Banner from '../img/receptmatch.svg'
 import TinderCard from 'react-tinder-card'
 import { CSSTransition } from 'react-transition-group'
@@ -21,8 +22,9 @@ function Swipe ({ recepies, onBack }) {
 
   useEffect(() => {
     setShowDescription(true)
-    // document.title = `You clicked ${amountOfCardsToShow} times`
-    document.title = currentRecipe.title
+    if (currentRecipe) {
+      document.title = currentRecipe.title
+    }
   })
   const cardSwiped = (dir) => {
     setShowDescription(false)
@@ -31,9 +33,11 @@ function Swipe ({ recepies, onBack }) {
 
   const increase = () => {
     setAmountOfCardsToShow(amountOfCardsToShow - 1)
-    setCurrentRecipe(recepies[amountOfCardsToShow + cardsToShowAtTheTime - 2])
     if (amountOfCardsToShow - 1 === -cardsToShowAtTheTime) {
       console.log('all recepies swiped!')
+      setCurrentRecipe(null)
+    } else {
+      setCurrentRecipe(recepies[amountOfCardsToShow + cardsToShowAtTheTime - 2])
     }
   }
 
@@ -69,12 +73,19 @@ function Swipe ({ recepies, onBack }) {
       setNoRecipeTap(false)
     }
   }
+
+  const bannerContainerStyle = {
+    transform: currentRecipe ? 'translateY(0)' : 'translateY(-100vh)'
+  }
+
   return (
     <div className='swipe' onScroll={onScroll}>
       <SearchButton func={onBack} />
       <button ref={buttonRef} style={hiddenStyle} onClick={increase}>increase!</button>
-      <img className='banner' src={Banner} alt='' />
-      <BlurredBackground backgroundURL={currentRecipe.imageURL} height='90vh' />
+      <div style={bannerContainerStyle} className='banner'>
+        <img src={Banner} alt='' />
+      </div>
+      {currentRecipe ? <BlurredBackground backgroundURL={currentRecipe.imageURL} /> : <BlurredBackground />}
       <div className='swipeArea'>
         {noRecipeTap ? <div onTouchEnd={onTouchEnd} className='noTap' /> : ''}
         <div className='CardContainer' ref={scaleRef}>
@@ -83,11 +94,12 @@ function Swipe ({ recepies, onBack }) {
               <Card key={recepie.id + 'card'} showfront={index > amountOfCardsToShow + cardsToShowAtTheTime - 2} recipe={recepie} />
             </TinderCard>
           )}
+          {currentRecipe ? '' : <NoResults onClick={onBack} />}
         </div>
       </div>
       <CSSTransition in={showDescription} timeout={500} classNames='description-transition'>
         <div onTouchEnd={onTouchEnd}>
-          <Description arrowDown={showingRecipe} style={{ zIndex: 15 }} recipe={currentRecipe} />
+          {currentRecipe ? <Description arrowDown={showingRecipe} style={{ zIndex: 15 }} recipe={currentRecipe} /> : ''}
         </div>
       </CSSTransition>
     </div>

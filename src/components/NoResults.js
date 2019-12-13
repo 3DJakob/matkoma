@@ -7,13 +7,17 @@ const divStyle = {
   alignItems: 'center'
 }
 
+const pStyle = {
+  marginTop: 0
+}
+
 function NoResults ({ onClick }) {
   return (
     <div style={divStyle}>
-      <p>
+      <h1>
         Inga fler recept :(
-      </p>
-      <p>
+      </h1>
+      <p style={pStyle}>
         Uppdatera din sökning och försök igen.
       </p>
       <Button text='Ny sökning' onClick={onClick} />
