@@ -22,7 +22,7 @@ function SearchList ({ placeholder, numberOfVisibleInResult, list, onClick }) {
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#fff',
-    boxShadow: '0 0 20px 0 rgba(0,0,0,0.3)',
+    boxShadow: '0 0 20px 0 rgba(0,0,0,0.1)',
     borderRadius: 20,
     overflow: 'hidden'
   }
@@ -30,7 +30,7 @@ function SearchList ({ placeholder, numberOfVisibleInResult, list, onClick }) {
   const inputStyle = {
     borderRadius: 20,
     border: 'none',
-    boxShadow: '0 0 20px 0 rgba(0,0,0,0.3)',
+    boxShadow: '0 0 20px 0 rgba(0,0,0,0.1)',
     padding: 10,
     margin: 0,
     fontSize: 14
