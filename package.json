@@ -1,5 +1,6 @@
 {
   "name": "matkoma",
+  "homepage": "https://3djakob.github.io/matkoma/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
